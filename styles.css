@@ -1,0 +1,111 @@
+:root{
+  background-color: rgb(223, 240, 216);
+}
+#mainContainer{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#container{
+  background-color:rgba(87,87,87,255);
+  margin: auto;
+  display: grid;
+  grid-template-columns: 55px 55px 55px 55px;
+  grid-template-rows: 30px 30px repeat(5,35px);
+  gap: 20px;
+  padding: 20px;
+  grid-template-areas: "dp dp dp dp"
+                       "dp dp dp dp"
+                       "clr clr dl dl";
+  border-radius: 25px;
+  border-bottom: 10px solid #2f2f2f;
+  
+}
+
+
+#display{
+  grid-area: dp;
+  background-color: rgba(187,208,191, 2555);
+  border-radius: 10px;
+  font-family: 'orbitron', 'sans-serif';
+  padding: 0px;
+  display: flex;
+  align-items:  center;
+  justify-content: flex-end;
+  box-shadow: 0px 4px 0px #839286, 0px -4px 0px #839286;
+  overflow: hidden;
+}
+
+#display p{
+  margin: 0px;
+  font-size: 20px;
+  padding-right: 5px;
+  font-weight: bold;
+  direction: ltr;
+  white-space: nowrap;
+  unicode-bidi: isolate;
+}
+
+#clr{
+  grid-area: clr;
+}
+
+#dlt{
+  grid-area: dl;
+}
+.btn{
+  text-decoration: none;
+  background-color: rgba(237,237,237,255);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 25px;
+  font-family: 'Orbitron', 'sans-serif' ;
+  box-shadow: 0px 4px 0px #a6a6a6, 0px 7px 8px black;
+  transition: all 0.2 ease;
+}
+
+.btn:active{
+  box-shadow: none;
+}
+
+#equal{
+  color: white;
+  background-color:rgba(248,163,75,255);
+  box-shadow: 0px 4px 0px #ae7335, 0px 5px 6px black;
+}
+
+#equal:active{
+  box-shadow: none;
+}
+
+@media (max-width: 320px){
+  #container{
+    background-color:rgba(87,87,87,255);
+    margin: auto;
+    display: grid;
+    grid-template-columns: 40px 40px 40px 40px;
+    grid-template-rows: 30px 30px repeat(5,35px);
+    gap: 20px;
+    padding: 20px;
+    grid-template-areas: "dp dp dp dp"
+                         "dp dp dp dp"
+                         "clr clr dl dl";
+    border-radius: 25px;
+    border-bottom: 10px solid #2f2f2f;
+  }
+  
+  #display p{
+    font-size: 17px;
+  }
+
+  .btn {
+    font-size: 20px;
+  }
+}
