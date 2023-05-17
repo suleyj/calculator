@@ -1,7 +1,7 @@
 # Calculator
 
 Calculator built with html, css and javascript<br>
-Link(https://suley890.github.io/calculator/)
+Link(https://suleyj.github.io/calculator/)
 
 ## Features
 - Add, subtract, division, multiplication
